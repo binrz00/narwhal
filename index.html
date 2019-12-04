@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>N.A.R.W.H.A.L.</title>
+  <link href="assets/css/reset.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Sriracha&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="test1">
+  <ul id="aboutUsDropdown" class="dropdown-content">
+    <li><a class="light-blue-text text-darken-4" href="ourMission.html">Our Mission</a></li>
+    <li class="divider"></li>
+    <li><a class="light-blue-text text-darken-4" href="documentation.html">Documentation</a></li>
+    <li class="divider"></li>
+    <li><a class="light-blue-text text-darken-4" href="aboutUs.html">About Us</a></li>
+  </ul>
+  <nav class="light-blue darken-4 z-depth-4">
+    <div class="nav-wrapper light-blue darken-4 container">
+
+      <a href="#" class="brand-logo"><img class="logo-pic" src="assets/images/narwhal logo.png"> N.A.R.W.H.A.L.</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="instructions.html">Instructions</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="aboutUsDropdown">About Us<i
+              class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="input" class="container center-align">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6 offset-s3 light-blue darken-4 search-bar center-align z-depth-4">
+            <i id="button-search" class="material-icons prefix">search</i>
+            <textarea id="user-input" class="materialize-textarea white-text"></textarea>
+            <label for="icon_prefix2">Search</label>
+            <label id="input">
+              <input id="gameCheck" type="radio" name="game/movie" />
+              <span id="radioBoxes">Games</span>
+              <label>
+                <input id="movieCheck" type="radio" name="game/movie" />
+                <span id="radioBoxes">Movies</span>
+              </label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row center-align" id="omdb-display">
+  </div>
+
+
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- Compiled and minified JavaScript for materialize-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+  </script>
+  <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
